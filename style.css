@@ -20,7 +20,7 @@ body {
 }
 
 #perfil img {
-  width: 18%;
+  width: 220px;
   margin: 50px 150px 50px;
   border-radius: 50%;
   
@@ -33,7 +33,7 @@ body {
   margin: -20px 0 10px;
 }
 
-#links a, #projetos a {
+#links a {
   background-color: #42498E;
   border: 2px solid #ffffff;
   border-radius: 30px;
@@ -65,10 +65,43 @@ body {
   font-size: 1em;
 }
 
-#projeto-titulo {
-  text-align: center;
-  color: white;
+/* PROJETOS */
+
+#projetos-titulo {
+  display: flex;
+  justify-content: center;
 }
+
+#projetos {
+  display: grid;
+  grid-template-columns: 1fr ;
+
+
+}
+
+/* #projetos p {
+  top: 87%;
+  right: 40%;
+  font-size: 1.3em;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+
+} */
+
+/* .projetos-img-titulo {
+  background: rgba( 41, 41, 41, 0.4 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 9px );
+  -webkit-backdrop-filter: blur( 9px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );  
+} */
+
+#projetos img {
+  border-radius: 0 20px 20px 0 ;
+  width: 350px;
+}
+
 
 
 
