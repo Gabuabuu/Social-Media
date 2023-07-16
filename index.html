@@ -23,12 +23,13 @@
     </div>
 
     <div id="links">
-      <a href="https://instagram.com/gabryel_dn1?igshid=YmMyMTA2M2Y="><i
+      <a target="_blank" href="https://instagram.com/gabryel_dn1?igshid=YmMyMTA2M2Y="><i
           class="fa-brands fa-instagram"></i>Instagram</a>
 
-      <a href="https://www.linkedin.com/in/gabryel-neves"><i class="fa-brands fa-linkedin-in"></i>LinkedIn</a>
+      <a target="_blank" href="https://www.linkedin.com/in/gabryel-neves"><i
+          class="fa-brands fa-linkedin-in"></i>LinkedIn</a>
 
-      <a href="https://github.com/Gabuabuu"><i class="fa-brands fa-github"></i>Github</a>
+      <a target="_blank" href="https://github.com/Gabuabuu"><i class="fa-brands fa-github"></i>Github</a>
     </div>
 
     <hr style="width: 50%; margin: 20px 25% 1% 25%; border: 1px solid rgba(128, 128, 128, 0.648);">
@@ -36,20 +37,60 @@
     <h3 id="projetos-titulo"> Projetos</h3>
 
 
-    <div id="projetos">
-      <a target="_blank" href="https://poke-227j95ivj-gabuabuu.vercel.app/"><img
-          src="src\assets\images\pokeapi.png"></a>
-      <p class="projetos-img-titulo">Pokedex</p>
-
-      <a target="_blank" href="https://poke-227j95ivj-gabuabuu.vercel.app/"><img
-          src="src\assets\images\pokeapi.png"></a>
-      <p class="projetos-img-titulo"></p>
-
-      <a target="_blank" href="https://poke-227j95ivj-gabuabuu.vercel.app/"><img
-          src="src\assets\images\pokeapi.png"></a>
-      <p class="projetos-img-titulo"></p>
+    <!-- CAROUSEL -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="https://pokedex-gabuabuu.vercel.app/" target="_blank">
+            <div class="d-flex justify-content-center"><img class="d-block w-50" src="src/assets/images/pokeapi.png"
+                alt="Projeto Pokedex"></div>
+          </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-info">Pokedex</h5>
+            <p class="carousel-info-desc">Projeto feito utilizando a pokeapi</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="https://previsao-tempo-dun.vercel.app/" target="_blank">
+            <div class="d-flex justify-content-center"><img class="d-block w-50" src="src/assets/images/previsao-tempo.png"
+                alt="Projeto Previsão Tempo"></div>
+          </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-info">Previsão Tempo</h5>
+            <p class="carousel-info-desc">Projeto feito utilizando </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide" alt="Terceiro Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="src/assets/images/background.jpeg" alt="Terceiro Slidwwwe">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="info-control">
+              <h5 class="carousel-info">Pokedex</h5>
+              <p class="carousel-info-desc">Projeto feito utilizando a pokeapi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
     </div>
+    <!-- CAROUSEL -->
   </main>
+
   <footer id="footer">
     <p>Copyright: All rights reserved for Gabu <span id="current-year"></span> &copy</p>
   </footer>

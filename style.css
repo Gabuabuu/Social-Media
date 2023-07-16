@@ -23,7 +23,7 @@ body {
   width: 220px;
   margin: 50px 150px 50px;
   border-radius: 50%;
-  
+
 }
 
 #name {
@@ -48,7 +48,7 @@ body {
   padding: 15px 90px;
   font-size: 1.3em;
   text-decoration: none;
-  text-align: center 
+  text-align: center
 }
 
 #links a:hover {
@@ -70,13 +70,51 @@ body {
 #projetos-titulo {
   display: flex;
   justify-content: center;
+  color: #000000;
+  margin: 30px;
 }
 
-#projetos {
+/* #projetos {
   display: grid;
   grid-template-columns: 1fr ;
 
 
+} */
+
+.carousel-indicators {
+  margin: -30px;
+}
+
+.carousel-caption {
+  margin: -50px;
+}
+
+
+h5 {
+position: absolute;
+}
+
+.info-controll > h5 {
+  background: rgba( 0, 0, 0, 0.45 );
+  backdrop-filter: blur( 1.5px );
+  -webkit-backdrop-filter: blur( 1.5px );
+  border-radius: 10px;
+}
+
+.carousel-info {
+  
+  font-weight: bold;
+  font-size: 1.3em;
+  width: 26%;  
+  right: 37%;
+  top: -20%;
+}
+
+.carousel-info-desc {
+  font-size: 1.1em;
+  color: #fffbfbca;
+  font-weight: bold;
+  
 }
 
 /* #projetos p {
@@ -98,14 +136,14 @@ body {
 } */
 
 #projetos img {
-  border-radius: 0 20px 20px 0 ;
+  border-radius: 0 20px 20px 0;
   width: 350px;
 }
 
-
-
-
 #footer {
+  height: 100%;
   text-align: center;
   color: #FFFFFF;
+  margin: 50px;
+  font-weight: bold;
 }
