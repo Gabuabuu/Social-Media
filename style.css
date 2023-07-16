@@ -89,32 +89,35 @@ body {
   margin: -50px;
 }
 
-
 h5 {
-position: absolute;
-}
-
-.info-controll > h5 {
-  background: rgba( 0, 0, 0, 0.45 );
-  backdrop-filter: blur( 1.5px );
-  -webkit-backdrop-filter: blur( 1.5px );
-  border-radius: 10px;
+  position: absolute;
 }
 
 .carousel-info {
-  
   font-weight: bold;
   font-size: 1.3em;
-  width: 26%;  
-  right: 37%;
   top: -20%;
+  background-color: rgba(0, 0, 0, 0.609);
+  border-radius: 10px;
+  width: 40%;
+  display: inline-block;
 }
 
 .carousel-info-desc {
+  background-color: rgba(0, 0, 0, 0.549);
+  border-radius: 10px;
+  width: 40%;
+  display: inline-block;
+  
   font-size: 1.1em;
   color: #fffbfbca;
   font-weight: bold;
-  
+}
+
+#img-control {
+  border-radius: 20px;
+  box-shadow: 5px 5px 2px black;
+
 }
 
 /* #projetos p {
