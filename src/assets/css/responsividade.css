@@ -1,0 +1,21 @@
+@media only screen and (max-width: 600px) {
+    main {
+        margin: 50px;
+    }
+
+    #name {
+        margin: 30px;
+    }
+
+    #perfil {
+        display: none;
+    }
+
+    #links a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+      
+    }
+}
