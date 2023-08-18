@@ -1,21 +1,30 @@
 @media only screen and (max-width: 600px) {
-    main {
-        margin: 50px;
-    }
+  main {
+    margin: 50px;
+  }
 
-    #name {
-        margin: 30px;
-    }
+  #name {
+    margin: 30px;
+  }
 
-    #perfil {
-        display: none;
-    }
+  #perfil {
+    display: none;
+  }
 
-    #links a{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 20px auto;
-      
-    }
+  #links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+  }
+
+  #footer {
+    height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 50px;
+    font-weight: bold;
+    font-size: 0.6em
+  }
+
 }
