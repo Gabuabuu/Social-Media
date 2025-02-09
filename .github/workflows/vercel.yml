@@ -15,8 +15,6 @@ jobs:
       steps:
         - uses: actions/checkout@v2
 
-        - run: vercel-link -o ${{ env.VERCEL_ORG_ID }} -p ${{ env.VERCEL_PROJECT_ID }} -t ${{ secrets.VERCEL_TOKEN }}
-
         - name: Install Vercel CLI
           run: npm install -g vercel
 
