@@ -1,11 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 body {
-  background-image: linear-gradient(#1B2A49, #365A81);
+  background-image: linear-gradient(#1b2a49, #365a81);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -19,21 +19,20 @@ body {
 }
 
 #perfil img {
-  width: 19.8%;
-  margin: 50px 150px 50px;
+  width: 14em;
+  margin: 50px 150px;
   border-radius: 50%;
-
 }
 
 #name {
   text-align: center;
-  font-size: 15.7pt;
+  font-size: 1.6em;
   color: #ffffff;
   margin: -20px 0 10px;
 }
 
 #links a {
-  background-color: #42498E;
+  background-color: #282829;
   border: 2px solid #ffffff;
   border-radius: 30px;
   color: #ffffff;
@@ -46,13 +45,13 @@ body {
   padding: 15px 90px;
   font-size: 1.3em;
   text-decoration: none;
-  text-align: center
+  text-align: center;
 }
 
 #links a:hover {
-  background-color: #6D78E3;
-  border: 2px solid #6A3980;
-  color: #000000;
+  background-color: #202020;
+  border: 2px solid #161616;
+  color: #ffffff;
   width: 25%;
   text-decoration: none;
 }
@@ -71,10 +70,10 @@ body {
   margin: 30px;
 }
 
-
 .carousel-indicators {
   margin: -30px;
 }
+
 
 .carousel-caption {
   margin: -50px;
@@ -99,7 +98,7 @@ h5 {
   border-radius: 10px;
   width: 40%;
   display: inline-block;
-  
+
   font-size: 1.1em;
   color: #fffbfbca;
   font-weight: bold;
@@ -108,20 +107,17 @@ h5 {
 #img-control {
   border-radius: 20px;
   box-shadow: 5px 5px 2px black;
-
+  width: 40%;
 }
-
 
 #projetos img {
   border-radius: 0 20px 20px 0;
-  width: 350px;
 }
 
 #footer {
   height: 100%;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 50px;
   font-weight: bold;
 }
-
