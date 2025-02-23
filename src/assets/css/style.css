@@ -1,0 +1,81 @@
+:root {
+  --background-color: linear-gradient(#1d1d1d, #242424);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: var(--background-color);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(100%);
+
+  width: 100%;
+}
+
+#profile {
+  display: flex;
+  margin: 50px 50px 0;
+  justify-content: center;
+  background-color: #1b2a49, #365a81;
+}
+
+#profile-photo img {
+  width: 10em;
+  border-radius: 50%;
+  margin-left: -250px;
+}
+
+#profile-name {
+  display: flex;
+  align-items: center;
+  margin: 50px 5px;
+}
+
+#profile-name strong {
+  color: #ffffff;
+  font-size: 2em;
+  margin: 0 0 0 10px;
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(38, 37, 36); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: 0.1em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+#footer {
+  text-align: center;
+  color: #ffffff;
+  margin: 290px auto 0;
+  font-weight: bold;
+  height: 100%;
+}
+
+/* Anim */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(23, 22, 21);
+  }
+}
