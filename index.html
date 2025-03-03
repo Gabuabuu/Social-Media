@@ -26,12 +26,11 @@
         <div id="profile-photo">
           <img src="src/assets/images/pfp2.jpg" alt="My profile photo" />
         </div>
-        <div id="profile-name">
-          <strong >Gabryel D'avila Neves</strong>
+        <div id="profile-info">
+          <strong>Gabryel D'avila Neves</strong>
+          <span>Futuro Desenvolvedor Full-Stack </span>
         </div>
-        
       </div>
-
     </main>
 
     <footer id="footer">
@@ -61,5 +60,10 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <script>
+      setTimeout(() => {
+        document.querySelector("#profile-info span").classList.add("finished");
+      }, 2500);
+    </script>
   </body>
 </html>
