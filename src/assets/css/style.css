@@ -1,5 +1,6 @@
 :root {
   --background-color: linear-gradient(#1d1d1d, #242424);
+  --text-color: #ffffff;
 }
 
 * {
@@ -15,7 +16,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   backdrop-filter: blur(100%);
-
   width: 100%;
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 #profile-photo img {
-  width: 10em;
+  width: 12em;
   border-radius: 50%;
   margin-left: -250px;
 }
@@ -43,6 +43,8 @@ body {
   color: #ffffff;
   font-size: 2em;
   margin: 0 0 0 10px;
+  justify-content: baseline;
+  align-items: baseline;
 
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid rgb(38, 37, 36); /* The typwriter cursor */
@@ -65,12 +67,59 @@ body {
   border-right: none;
 }
 
+#about-me {
+  display: flex;
+  margin: 15px 50px 0;
+  background-color: #1b2a49, #365a81;
+  color: var(--text-color);
+  flex-direction: column;
+}
+
+#about-me-text {
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  margin: 1.25rem 18rem;
+  font-size: 18pt;
+  display: flex;
+  justify-content: center;
+}
+
 #footer {
   text-align: center;
   color: #ffffff;
-  margin: 290px auto 0;
+  margin: 390px auto 0;
   font-weight: bold;
   height: 100%;
+}
+
+#skills-text {
+  display: flex;
+  margin: 35px;
+  flex-direction: column;
+  text-align: center;
+}
+
+#skills {
+  display: flex;
+  text-align: center;
+  background-size: cover;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: rgb(27, 27, 27);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#skills img {
+  width: 3em;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  cursor: pointer;
 }
 
 /* Anim */
