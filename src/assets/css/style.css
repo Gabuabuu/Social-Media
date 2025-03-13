@@ -27,8 +27,8 @@ body {
 }
 
 #profile-photo img {
-  width: 12em;
-  border-radius: 50%;
+  width: 15em;
+  border-radius: 30%;
   margin-left: -250px;
 }
 
