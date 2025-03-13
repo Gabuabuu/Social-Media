@@ -24,7 +24,7 @@
     <main>
       <div id="profile">
         <div id="profile-photo">
-          <img src="src/assets/images/pfp2.jpg" alt="My profile photo" />
+          <img src="src/assets/images/pfp.png" alt="My profile photo" />
         </div>
         <div id="profile-info">
           <strong>Gabryel D'avila Neves</strong>
@@ -39,15 +39,30 @@
         de programação. Atualmente estou estudando desenvolvimento web e
         futuramente pretendo me tornar um desenvolvedor Full-Stack.
       </p>
+      
 
       <h4 id="skills-text">Skills</h4>
       <section id="skills">
-        <img src="/src/assets/images/techs/js.png" alt="Javascript" />
-        <img src="/src/assets/images/techs/node.png" alt="Node" />
-        <img src="/src/assets/images/techs/html.png" alt="Html" />
-        <img src="/src/assets/images/techs/mysql.png" alt="Mysql" />
-      </section>
+        <img src="/src/assets/images/techs/js.png" alt="Javascript" onclick="openModal('modal-js')"/>
+        <img src="/src/assets/images/techs/node.png" alt="Node" onclick="openModal('modal-node')"/>
+        <img src="/src/assets/images/techs/html.png" alt="Html" onclick="openModal('modal-html')"/>
+        <img src="/src/assets/images/techs/mysql.png" alt="Mysql" onclick="openModal('modal-mysql')"/>
     </section>
+
+    <div id="modal-js" class="modal" >
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('modal-js')">&times;</span>
+          <h2>Javascript</h2>
+          <p>JavaScript é uma linguagem de programação amplamente utilizada para desenvolvimento web. Permite criar interatividade em páginas da web, manipular elementos do DOM e desenvolver aplicações tanto no lado do cliente quanto no servidor (com Node.js).</p>
+      </div>
+  </div>
+    <div id="modal-node" class="modal" >
+      <div class="modal-content">
+          <span class="close" onclick="closeModal('modal-node')">&times;</span>
+          <h2>Javascript</h2>
+          <p>JavaScript é uma linguagem de programação amplamente utilizada para desenvolvimento web. Permite criar interatividade em páginas da web, manipular elementos do DOM e desenvolver aplicações tanto no lado do cliente quanto no servidor (com Node.js).</p>
+      </div>
+  </div>
 
     <footer id="footer">
       <p>
@@ -56,8 +71,12 @@
       </p>
     </footer>
 
-    <script src="./src/js/footer.js"></script>
+    <script defer src="./src/js/footer.js"></script>
+    <script defer src="./src/js/skillsModal.js"></script>
 
+
+    
+    
     <script>
       setTimeout(() => {
         document.querySelector("#profile-info span").classList.add("finished");
