@@ -26,7 +26,8 @@ style.innerHTML = `
   position: relative;
   border: 2px solid #000000;
   max-width: 500px;
-  
+  color:#ffffff;
+
 }
 
 .close {
@@ -35,7 +36,6 @@ style.innerHTML = `
   right: 15px;
   font-size: 20px;
   cursor: pointer;
-  color:#ffffff;
 }
 
 `;
