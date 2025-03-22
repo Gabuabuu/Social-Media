@@ -115,6 +115,54 @@ body {
   cursor: pointer;
 }
 
+.modal-content ul {
+  list-style: none;
+}
+.modal-content ul li {
+  margin: 20px 0;
+}
+
+.modal-content .bars {
+  background-color: rgba(49, 48, 48, 0.639);
+  display: block;
+  height: 20px;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.bars > span {
+  height: 20px;
+  background: linear-gradient(90deg, rgba(37,93,5,1) 78%, rgba(5,120,18,1) 100%);
+  position: absolute;
+  
+  left: 0; /* <- Garante que o span comece no início */
+}
+
+.modal-content .javascript {
+  width: 50%;
+  animation: javascript 2s;
+}
+
+.modal-content .node {
+  width: 30%;
+  animation: node 2s;
+
+}
+
+.modal-content .html {
+  width: 90%;
+  animation: html 2s;
+
+}
+
+.modal-content .mysql {
+  width: 20%;
+  animation: mysql 2s;
+
+}
+
+
 #projects img {
   width: 100%;
   list-style-type: none;
@@ -145,13 +193,11 @@ body {
   transition: 2s;
   position: relative;
 }
-.slide img{
+.slide img {
   width: 25%;
   transition: 2s;
   position: relative;
 }
-
-
 
 .manual-navigation {
   position: absolute;
@@ -253,5 +299,43 @@ body {
   }
   50% {
     border-color: rgb(23, 22, 21);
+  }
+}
+
+
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+  
+}
+
+@keyframes node {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes mysql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
   }
 }
