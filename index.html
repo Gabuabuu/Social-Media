@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./src/assets/css/style.css" />
     <link rel="stylesheet" href="/src/assets/css/responsividade.css" />
+    <link
+      rel="shortcut icon"
+      href="src/assets/images/icon.png"
+      type="image/x-icon"
+    />
     <script
       src="https://kit.fontawesome.com/2352a280c8.js"
       crossorigin="anonymous"
@@ -39,30 +44,143 @@
         de programação. Atualmente estou estudando desenvolvimento web e
         futuramente pretendo me tornar um desenvolvedor Full-Stack.
       </p>
-      
 
       <h4 id="skills-text">Skills</h4>
       <section id="skills">
-        <img src="/src/assets/images/techs/js.png" alt="Javascript" onclick="openModal('modal-js')"/>
-        <img src="/src/assets/images/techs/node.png" alt="Node" onclick="openModal('modal-node')"/>
-        <img src="/src/assets/images/techs/html.png" alt="Html" onclick="openModal('modal-html')"/>
-        <img src="/src/assets/images/techs/mysql.png" alt="Mysql" onclick="openModal('modal-mysql')"/>
+        <img
+          src="/src/assets/images/techs/js.png"
+          alt="Javascript"
+          onclick="openModal('modal-js')"
+        />
+        <img
+          src="/src/assets/images/techs/node.png"
+          alt="Node"
+          onclick="openModal('modal-node')"
+        />
+        <img
+          src="/src/assets/images/techs/html.png"
+          alt="Html"
+          onclick="openModal('modal-html')"
+        />
+        <img
+          src="/src/assets/images/techs/mysql.png"
+          alt="Mysql"
+          onclick="openModal('modal-mysql')"
+        />
+      </section>
     </section>
 
-    <div id="modal-js" class="modal" >
-      <div class="modal-content">
+    <div class="modalGroup">
+      <div id="modal-js" class="modal">
+        <div class="modal-content">
           <span class="close" onclick="closeModal('modal-js')">&times;</span>
           <h2>Javascript</h2>
-          <p>JavaScript é uma linguagem de programação amplamente utilizada para desenvolvimento web. Permite criar interatividade em páginas da web, manipular elementos do DOM e desenvolver aplicações tanto no lado do cliente quanto no servidor (com Node.js).</p>
+          <p>
+            JavaScript é uma linguagem de programação amplamente utilizada para
+            desenvolvimento web. Permite criar interatividade em páginas da web,
+            manipular elementos do DOM e desenvolver aplicações tanto no lado do
+            cliente quanto no servidor (com Node.js).
+          </p>
+        </div>
       </div>
-  </div>
-    <div id="modal-node" class="modal" >
-      <div class="modal-content">
+      <div id="modal-node" class="modal">
+        <div class="modal-content">
           <span class="close" onclick="closeModal('modal-node')">&times;</span>
           <h2>Javascript</h2>
-          <p>JavaScript é uma linguagem de programação amplamente utilizada para desenvolvimento web. Permite criar interatividade em páginas da web, manipular elementos do DOM e desenvolver aplicações tanto no lado do cliente quanto no servidor (com Node.js).</p>
+          <p>
+            JavaScript é uma linguagem de programação amplamente utilizada para
+            desenvolvimento web. Permite criar interatividade em páginas da web,
+            manipular elementos do DOM e desenvolver aplicações tanto no lado do
+            cliente quanto no servidor (com Node.js).
+          </p>
+        </div>
       </div>
-  </div>
+      <div id="modal-html" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal-html')">&times;</span>
+          <h2>Html</h2>
+          <p>Html</p>
+        </div>
+      </div>
+      <div id="modal-mysql" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal-mysql')">&times;</span>
+          <h2>Mysql</h2>
+          <p>Mysql</p>
+        </div>
+      </div>
+    </div>
+
+    <h4 id="projects-text">Projetos</h4>
+    <section id="projects">
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+
+          <div class="slide first">
+            <a
+              href="https://calcula-gorjeta-hdr2.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/src/assets/images/projects/gorjeta.png" alt=""
+            /></a>
+          </div>
+          <div class="slide">
+            <a
+              href="https://calculadorade-imc.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/src/assets/images/projects/imc.png" alt="" />
+            </a>
+          </div>
+          <div class="slide">
+            <a
+              href="https://previsao-tempo-dun.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/src/assets/images/projects/previsao-tempo.png"
+                alt=""
+                srcset=""
+              />
+            </a>
+          </div>
+          <div class="slide">
+            <a
+              href="https://pokedex-gabuabuu.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/src/assets/images/projects/pokeapi.png"
+                alt=""
+                srcset=""
+              />
+            </a>
+          </div>
+
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+
+          <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer id="footer">
       <p>
@@ -73,10 +191,8 @@
 
     <script defer src="./src/js/footer.js"></script>
     <script defer src="./src/js/skillsModal.js"></script>
+    <script defer src="/src/js/sliderProjects.js"></script>
 
-
-    
-    
     <script>
       setTimeout(() => {
         document.querySelector("#profile-info span").classList.add("finished");
