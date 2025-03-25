@@ -67,14 +67,14 @@ body {
   border-right: none;
 }
 
-#about-me {
+#intro {
   display: flex;
   margin: 15px 50px 0;
   color: var(--text-color);
   flex-direction: column;
 }
 
-#about-me-text {
+#intro-text, #about-me {
   display: flex;
   align-items: baseline;
   flex-direction: column;
@@ -87,7 +87,7 @@ body {
 #skills-text,
 #projects-text {
   display: flex;
-  margin: 35px;
+  margin: 40px;
   flex-direction: column;
   text-align: center;
   color: var(--text-color);
@@ -133,9 +133,13 @@ body {
 
 .bars > span {
   height: 20px;
-  background: linear-gradient(90deg, rgba(37,93,5,1) 78%, rgba(5,120,18,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(37, 93, 5, 1) 78%,
+    rgba(5, 120, 18, 1) 100%
+  );
   position: absolute;
-  
+
   left: 0; /* <- Garante que o span comece no início */
 }
 
@@ -147,21 +151,29 @@ body {
 .modal-content .node {
   width: 30%;
   animation: node 2s;
-
 }
 
 .modal-content .html {
   width: 90%;
   animation: html 2s;
-
 }
 
 .modal-content .mysql {
   width: 20%;
   animation: mysql 2s;
-
 }
 
+#projects {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  flex-direction: row;
+  width: 100%;
+  margin: -40px auto;
+  border-radius: 20px;
+}
 
 #projects img {
   width: 100%;
@@ -173,8 +185,8 @@ body {
 
 .slider {
   margin: 0 auto;
-  width: 800px;
-  height: 800px;
+  width: 700px;
+  height: 700px;
   overflow: hidden;
 }
 
@@ -193,15 +205,11 @@ body {
   transition: 2s;
   position: relative;
 }
-.slide img {
-  width: 25%;
-  transition: 2s;
-  position: relative;
-}
+
 
 .manual-navigation {
   position: absolute;
-  width: 800px;
+  width: 700px;
   display: flex;
   justify-content: center;
   margin-top: 560px;
@@ -250,7 +258,7 @@ body {
 .navigation-auto {
   position: absolute;
   display: flex;
-  width: 800px;
+  width: 700px;
   justify-content: center;
   margin-top: 560px;
 }
@@ -272,9 +280,75 @@ body {
   background-color: #ffffff;
 }
 
+#about-me-text {
+  text-align: center;
+  color: var(--text-color);
+}
+
+#about-me {
+  display: flex;
+  justify-content: center;
+  background-color: #1b2a49, #365a81;
+  color: var(--text-color);
+}
+
+#contact-text {
+  text-align: center;
+  color: var(--text-color);
+  margin: 100px 0 10px
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  background-color: #1b2a49, #365a81;
+  color: var(--text-color);
+  margin: 50px;
+  padding: 20px;
+}
+
+#contact-info {
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px 40px;
+}
+
+#contacts-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#contact img {
+  width: 4em;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  cursor: pointer;
+}
+  
+
+#contact-info a {
+  color: #dcdcdc;
+  margin: 10px 0 0 10px;
+ 
+}
+
+#contact-info a > span {
+  color: #ffffff;
+  font-size: 1.5em;
+  margin: 20px auto 10px;
+}
+
 #footer {
   text-align: center;
-  color: #ffffff;
+  color: #ffffff; 
   margin: 390px auto 0;
   font-weight: bold;
   height: 100%;
@@ -302,7 +376,6 @@ body {
   }
 }
 
-
 @keyframes javascript {
   0% {
     width: 0%;
@@ -310,7 +383,6 @@ body {
   100% {
     width: 50%;
   }
-  
 }
 
 @keyframes node {
